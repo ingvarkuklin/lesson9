@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,12 +13,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8b-LZ-Yzr">
-                                <rect key="frame" x="94" y="748" width="202" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7a-TO-Qo4">
+                                <rect key="frame" x="137.66666666666666" y="47" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4sz-3G-aJf"/>
+                                    <constraint firstAttribute="height" constant="100" id="EdO-6u-hoy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-kt-vxn">
+                                <rect key="frame" x="137.66666666666666" y="169" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-ie-dfl">
+                                <rect key="frame" x="137.66666666666666" y="291" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8b-LZ-Yzr">
+                                <rect key="frame" x="86.666666666666686" y="519" width="202" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Bo6-cY-kUo"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Переключатель">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
@@ -27,29 +45,29 @@
                                     <action selector="turnButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sFO-1X-nvF"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V7a-TO-Qo4">
-                                <rect key="frame" x="95" y="55" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-kt-vxn">
-                                <rect key="frame" x="95" y="273" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-ie-dfl">
-                                <rect key="frame" x="95" y="497" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ig1-kt-vxn" firstAttribute="centerX" secondItem="V7a-TO-Qo4" secondAttribute="centerX" id="5tQ-2i-OQD"/>
+                            <constraint firstItem="ig1-kt-vxn" firstAttribute="width" secondItem="V7a-TO-Qo4" secondAttribute="width" id="7Rr-aL-azD"/>
+                            <constraint firstItem="R0x-ie-dfl" firstAttribute="height" secondItem="V7a-TO-Qo4" secondAttribute="height" id="8yY-ce-bhQ"/>
+                            <constraint firstItem="ig1-kt-vxn" firstAttribute="top" secondItem="V7a-TO-Qo4" secondAttribute="bottom" constant="22" id="GJq-qU-BqS"/>
+                            <constraint firstItem="R0x-ie-dfl" firstAttribute="width" secondItem="V7a-TO-Qo4" secondAttribute="width" id="IMM-jJ-XEf"/>
+                            <constraint firstItem="X8b-LZ-Yzr" firstAttribute="centerX" secondItem="V7a-TO-Qo4" secondAttribute="centerX" id="N9l-Cp-qLx"/>
+                            <constraint firstItem="R0x-ie-dfl" firstAttribute="top" secondItem="ig1-kt-vxn" secondAttribute="bottom" constant="22" id="OQa-kQ-jMG"/>
+                            <constraint firstItem="ig1-kt-vxn" firstAttribute="height" secondItem="V7a-TO-Qo4" secondAttribute="height" id="PLr-kx-6GS"/>
+                            <constraint firstItem="V7a-TO-Qo4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VGg-QM-MbB"/>
+                            <constraint firstItem="X8b-LZ-Yzr" firstAttribute="top" secondItem="R0x-ie-dfl" secondAttribute="bottom" constant="128" id="d1B-Qw-YYr"/>
+                            <constraint firstItem="V7a-TO-Qo4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="l7O-Rh-V41"/>
+                            <constraint firstItem="R0x-ie-dfl" firstAttribute="centerX" secondItem="V7a-TO-Qo4" secondAttribute="centerX" id="taF-f0-wTd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenView" destination="R0x-ie-dfl" id="OAY-Gb-ReC"/>
                         <outlet property="orangeView" destination="ig1-kt-vxn" id="MiN-1D-R3s"/>
                         <outlet property="redView" destination="V7a-TO-Qo4" id="N5s-UF-AKl"/>
+                        <outlet property="redViewHeightConstraint" destination="EdO-6u-hoy" id="UFe-eN-IDc"/>
                         <outlet property="turnButton" destination="X8b-LZ-Yzr" id="Xg9-4i-Ebn"/>
                         <outletCollection property="viewsCollection" destination="V7a-TO-Qo4" collectionClass="NSMutableArray" id="8w9-6L-nSl"/>
                         <outletCollection property="viewsCollection" destination="ig1-kt-vxn" collectionClass="NSMutableArray" id="I5a-77-yvc"/>
@@ -58,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="100" y="4"/>
+            <point key="canvasLocation" x="100" y="3.6945812807881775"/>
         </scene>
     </scenes>
     <resources>
