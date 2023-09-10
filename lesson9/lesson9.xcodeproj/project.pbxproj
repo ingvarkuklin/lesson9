@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		5D79AD912AAE00340070EF26 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D79AD902AAE00340070EF26 /* SnapKit */; };
+		5DA20D6D2AAE74DD00744141 /* SvetoforSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA20D6C2AAE74DD00744141 /* SvetoforSectionView.swift */; };
 		5DBEE30D2AAC8581007EAFD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEE30C2AAC8581007EAFD8 /* AppDelegate.swift */; };
 		5DBEE30F2AAC8581007EAFD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEE30E2AAC8581007EAFD8 /* SceneDelegate.swift */; };
-		5DBEE3112AAC8581007EAFD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEE3102AAC8581007EAFD8 /* ViewController.swift */; };
+		5DBEE3112AAC8581007EAFD8 /* SvetoforController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DBEE3102AAC8581007EAFD8 /* SvetoforController.swift */; };
 		5DBEE3142AAC8581007EAFD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DBEE3122AAC8581007EAFD8 /* Main.storyboard */; };
 		5DBEE3162AAC8583007EAFD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DBEE3152AAC8583007EAFD8 /* Assets.xcassets */; };
 		5DBEE3192AAC8583007EAFD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DBEE3172AAC8583007EAFD8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DA20D6C2AAE74DD00744141 /* SvetoforSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforSectionView.swift; sourceTree = "<group>"; };
 		5DBEE3092AAC8581007EAFD8 /* lesson9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lesson9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DBEE30C2AAC8581007EAFD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DBEE30E2AAC8581007EAFD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5DBEE3102AAC8581007EAFD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DBEE3102AAC8581007EAFD8 /* SvetoforController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvetoforController.swift; sourceTree = "<group>"; };
 		5DBEE3132AAC8581007EAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DBEE3152AAC8583007EAFD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5DBEE3182AAC8583007EAFD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,8 +62,9 @@
 			children = (
 				5DBEE30C2AAC8581007EAFD8 /* AppDelegate.swift */,
 				5DBEE30E2AAC8581007EAFD8 /* SceneDelegate.swift */,
-				5DBEE3102AAC8581007EAFD8 /* ViewController.swift */,
+				5DBEE3102AAC8581007EAFD8 /* SvetoforController.swift */,
 				5DBEE3122AAC8581007EAFD8 /* Main.storyboard */,
+				5DA20D6C2AAE74DD00744141 /* SvetoforSectionView.swift */,
 				5DBEE3152AAC8583007EAFD8 /* Assets.xcassets */,
 				5DBEE3172AAC8583007EAFD8 /* LaunchScreen.storyboard */,
 				5DBEE31A2AAC8583007EAFD8 /* Info.plist */,
@@ -146,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DBEE3112AAC8581007EAFD8 /* ViewController.swift in Sources */,
+				5DA20D6D2AAE74DD00744141 /* SvetoforSectionView.swift in Sources */,
+				5DBEE3112AAC8581007EAFD8 /* SvetoforController.swift in Sources */,
 				5DBEE30D2AAC8581007EAFD8 /* AppDelegate.swift in Sources */,
 				5DBEE30F2AAC8581007EAFD8 /* SceneDelegate.swift in Sources */,
 			);

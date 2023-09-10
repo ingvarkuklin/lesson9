@@ -8,15 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Svetofor Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lesson9" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SvetoforController" customModule="lesson9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7a-TO-Qo4">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7a-TO-Qo4" customClass="SvetoforSectionView" customModule="lesson9" customModuleProvider="target">
                                 <rect key="frame" x="137.66666666666666" y="47" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
@@ -24,11 +24,11 @@
                                     <constraint firstAttribute="height" constant="100" id="EdO-6u-hoy"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-kt-vxn">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ig1-kt-vxn" customClass="SvetoforSectionView" customModule="lesson9" customModuleProvider="target">
                                 <rect key="frame" x="137.66666666666666" y="169" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-ie-dfl">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0x-ie-dfl" customClass="SvetoforSectionView" customModule="lesson9" customModuleProvider="target">
                                 <rect key="frame" x="137.66666666666666" y="291" width="100" height="100"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
@@ -64,14 +64,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="greenView" destination="R0x-ie-dfl" id="OAY-Gb-ReC"/>
-                        <outlet property="orangeView" destination="ig1-kt-vxn" id="MiN-1D-R3s"/>
-                        <outlet property="redView" destination="V7a-TO-Qo4" id="N5s-UF-AKl"/>
+                        <outlet property="firstSectionView" destination="V7a-TO-Qo4" id="N5s-UF-AKl"/>
                         <outlet property="redViewHeightConstraint" destination="EdO-6u-hoy" id="UFe-eN-IDc"/>
+                        <outlet property="secondSectionView" destination="ig1-kt-vxn" id="MiN-1D-R3s"/>
+                        <outlet property="thirdSectionView" destination="R0x-ie-dfl" id="OAY-Gb-ReC"/>
                         <outlet property="turnButton" destination="X8b-LZ-Yzr" id="Xg9-4i-Ebn"/>
-                        <outletCollection property="viewsCollection" destination="V7a-TO-Qo4" collectionClass="NSMutableArray" id="8w9-6L-nSl"/>
-                        <outletCollection property="viewsCollection" destination="ig1-kt-vxn" collectionClass="NSMutableArray" id="I5a-77-yvc"/>
-                        <outletCollection property="viewsCollection" destination="R0x-ie-dfl" collectionClass="NSMutableArray" id="5PI-ij-mxJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
